@@ -11,7 +11,7 @@ def sql_connect(db_path):
         cur = conn.cursor()
         print("Connected to " + str(db_path))
 
-        return conn, cur
+        return cur, conn
 
     except Error as e:
         print(e)
@@ -73,7 +73,7 @@ def create_tables(cur):
 
 if __name__ == "__main__":
 
-    conn, cur = sql_connect(DB_PATH)
+    cur, conn = sql_connect(DB_PATH)
 
     # Drop all tables if they exist
     # Then create new tables
