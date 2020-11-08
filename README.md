@@ -14,6 +14,8 @@
 - `fh-classes.json` - Foothill college class data for Fall 2020
 - `create_tables.py` - creates the tables `classes`, `instructor_classes`, and `meetings`
 - `etl.py` - loads the data from `fh-classes.json` into the database
+- `schema.dbml` - table schema using database markup language
+- `ER_diagram.png` - Entity-Relationship diagram using `schema.dbml` and [dbdiagram.io](https://dbdiagram.io/home)
 
 ## Code
 
