@@ -1,0 +1,29 @@
+Table classes {
+  crn integer [pk] // auto-increment
+  dept text
+  course text
+  section text
+  title text
+  units integer
+  start text
+  end text
+  seats integer
+  wait_seats integer
+  status text
+}
+Ref: instructor_class.crn > classes.crn
+
+Table meetings {
+  id integer [pk]
+  crn integer
+  days text
+  start_time text
+  end_time text
+  location text
+}
+Ref: meetings.crn > classes.crn
+
+Table instructor_class {
+  crn int [pk] 
+  name varchar [pk]
+ }
